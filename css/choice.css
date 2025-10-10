@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "glory";
+    src: url(/assets/fonts/Glory/Glory-VariableFont_wght.ttf);
+}
+
+#choiceView {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+
+#chatbubble {
+    border-radius: 10px;
+    background: #FFC710;
+    width: 292px;
+    height: 74.893px;
+    margin: auto;
+}
+
+#chatText {
+    color: #694106;
+    text-align: center;
+    font-family: "glory";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#choicesDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+   
+    align-items: center; 
+}
+
+.choiceButtons {
+    border-radius: 10px;
+    border: 1px solid #825108;
+    background: #FFE274;
+    box-shadow: 0 2px 4px 0 rgba(130, 81, 8, 0.80);
+
+    display: inline-flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
