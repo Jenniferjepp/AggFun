@@ -5,7 +5,7 @@ export function choiceFunction () {
     // skapa yttre div
     const choiceView = document.createElement("div");
     choiceView.id = "choiceView";
-    document.querySelector("#eggtainer").appendChild(choiceView);
+    document.querySelector("#app").appendChild(choiceView);
 
     // chat Div
     const chatDiv = document.createElement("div");

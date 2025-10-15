@@ -13,7 +13,7 @@ function loadCSS(href) {
 
 export function navigateTo (view = "choice") {
 
-    const container = document.querySelector("#eggtainer");
+    const container = document.querySelector("#app");
     // Rensa tidigare vy
     container.innerHTML = "";
 
