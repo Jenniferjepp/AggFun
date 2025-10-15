@@ -8,7 +8,7 @@
     src: url(/assets/fonts/Gluten/static/Gluten-Regular.ttf);
 }
 
-#choiceView {
+#preferenceView, #sizeView {
     display: flex;
     flex-direction: column;
     gap: 60px;
@@ -21,9 +21,11 @@
     border-radius: 10px;
     background: #FFC710;
     width: 292px;
-    height: 74.893px;
-    
+    height: 80px;
     border: solid 1px #825108;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #chatText {
@@ -34,7 +36,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    
+    white-space: pre-line;  /* tolkar \n som radbryt */
 }
 
 #choicesDiv {
@@ -45,7 +47,7 @@
     align-items: center; 
 }
 
-#choicesDiv .choiceButtons {
+.choiceButtons {
     border-radius: 10px;
     border: 1px solid #825108;
     background: #FFE274;
@@ -58,4 +60,8 @@
     gap: 10px;
     font-family: "gluten";
     color: #694106;
+}
+
+.choiceButtons:hover {
+    background-color: #FFF1BC;
 }

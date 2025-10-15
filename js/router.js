@@ -27,4 +27,6 @@ export function navigateTo (view = "choice") {
     container.textContent = "Oops! Okänd vy.";
 }
 
-navigateTo("choice");
+window.addEventListener("DOMContentLoaded", () => {
+    navigateTo("choice");
+});
