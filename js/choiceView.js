@@ -41,17 +41,17 @@ export function choiceFunction () {
 
     // innehåll choices Div
     const hardButton = document.createElement("button");
-    hardButton.classList = "choiceButtons";
+    hardButton.classList.add("choiceButtons");
     hardButton.textContent = "HÅRDKOKT";
     choicesDiv.appendChild(hardButton);
 
     const softButton = document.createElement("button");
-    softButton.classList = "choiceButtons";
+    softButton.classList.add("choiceButtons");
     softButton.textContent = "MJUKKOKT";
     choicesDiv.appendChild(softButton);
 
     const looseButton = document.createElement("button");
-    looseButton.classList = "choiceButtons";
+    looseButton.classList.add("choiceButtons");
     looseButton.textContent = "LÖSKOKT";
     choicesDiv.appendChild(looseButton);
 }
