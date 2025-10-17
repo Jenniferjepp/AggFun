@@ -46,3 +46,22 @@ footer {
     margin-left: 75px;
     margin-right: 75px;
 }
+
+button {
+    border-radius: 10px;
+    border: 1px solid #825108;
+    background: #FFE274;
+    box-shadow: 0 2px 4px 0 rgba(130, 81, 8, 0.80);
+
+    display: inline-flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: "gluten";
+    color: #694106;
+}
+
+button:hover {
+    background-color: #FFF1BC;
+}

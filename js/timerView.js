@@ -28,7 +28,7 @@ export function timerViewFunc (eggDataObj) {
     function setInfo() {
         lowerDiv.innerHTML = `
             <div class="infoDiv">
-                <h1 id="infoHeadLine">KOKA ÄGGEN I <span id="minutes">--</span> MINUTER</h1>
+                <h1 id="infoHeadLine">KOKA ÄGGEN I<br> <span id="minutes">--</span><br> MINUTER</h1>
                 <p id="infoP">KLICKA PÅ ÄGGSPERTEN FÖR ATT STARTA TIMERN</p>
             </div>
         `;

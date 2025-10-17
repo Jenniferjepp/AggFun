@@ -25,6 +25,7 @@ export function navigateTo (view = "choice") {
     }
 
     if (view=== "timer") {
+        loadCSS("./css/timer.css");
         container.appendChild(timerViewFunc());
         return;
     }
