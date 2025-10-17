@@ -12,7 +12,7 @@ function loadCSS(href) {
 }
 
 
-export function navigateTo (view = "choice") {
+export function navigateTo (view = "choice", eggDataObj) {
 
     const container = document.querySelector("#app");
     // Rensa tidigare vy
@@ -26,7 +26,7 @@ export function navigateTo (view = "choice") {
 
     if (view=== "timer") {
         loadCSS("./css/timer.css");
-        container.appendChild(timerViewFunc());
+        container.appendChild(timerViewFunc(eggDataObj));
         return;
     }
 

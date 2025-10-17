@@ -73,23 +73,26 @@ export function choiceFunction () {
         const hardButton = document.createElement("button");
         hardButton.classList.add("choiceButtons");
         hardButton.textContent = "HÅRDKOKT";
+        hardButton.dataset.pref = "HÅRDKOKT";   // spara värdet rätt
         choicesDiv.appendChild(hardButton);
 
         const softButton = document.createElement("button");
         softButton.classList.add("choiceButtons");
         softButton.textContent = "MJUKKOKT";
+        softButton.dataset.pref = "MJUKKOKT";
         choicesDiv.appendChild(softButton);
 
         const looseButton = document.createElement("button");
         looseButton.classList.add("choiceButtons");
         looseButton.textContent = "LÖSKOKT";
+        looseButton.dataset.pref = "LÖSKOKT";
         choicesDiv.appendChild(looseButton);
 
 
         choicesDiv.addEventListener("click", (e) => {
             const btn = e.target.closest(".choiceButtons");
             if (!btn) return; // klickade inte på en knapp
-            eggDataObj.preference = btn.textContent.trim();
+            eggDataObj.preference = btn.dataset.pref;
             console.log(eggDataObj);
 
             goToStep(2);
@@ -139,23 +142,26 @@ export function choiceFunction () {
         const buttonS = document.createElement("button");
         buttonS.classList.add("choiceButtons");
         buttonS.textContent = "S - SMAL";
+        buttonS.dataset.size = "S";   // ← lägg värdet här
         choicesDiv.appendChild(buttonS);
 
         const buttonM = document.createElement("button");
         buttonM.classList.add("choiceButtons");
         buttonM.textContent = "M - MEDIUM";
+        buttonM.dataset.size = "M";   // ← lägg värdet här
         choicesDiv.appendChild(buttonM);
 
         const buttonL = document.createElement("button");
         buttonL.classList.add("choiceButtons");
         buttonL.textContent = "L - LARGE"
+        buttonL.dataset.size = "L";   // ← lägg värdet här
         choicesDiv.appendChild(buttonL);
 
 
         choicesDiv.addEventListener("click", (e) => {
             const btn = e.target.closest(".choiceButtons");
             if (!btn) return; // klickade inte på en knapp
-            eggDataObj.size = btn.textContent.trim();
+            eggDataObj.size = btn.dataset.size;     // ← direkt "S"/"M"/"L"
             console.log(eggDataObj);
 
             navigateTo("timer", eggDataObj);
