@@ -1,3 +1,5 @@
+// server.js
+
 import { serveFile, serveDir } from "jsr:@std/http/file-server";
 
 const PORT = 4242;

@@ -1,6 +1,6 @@
 /* choiceView.js */
 
-//import { navigateTo } from "./router";
+import { navigateTo } from "./router.js";
 
 export function choiceFunction () {
 
@@ -158,7 +158,7 @@ export function choiceFunction () {
             eggDataObj.size = btn.textContent.trim();
             console.log(eggDataObj);
 
-            //navigateTo("timerView", eggDataObj);
+            navigateTo("timer", eggDataObj);
         })
 
         return sizeView;

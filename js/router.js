@@ -1,5 +1,6 @@
 /* router.js */
 import { choiceFunction } from "./choiceView.js";
+import { timerViewFunc } from "./timerView.js";
 
 
 function loadCSS(href) {
@@ -20,6 +21,11 @@ export function navigateTo (view = "choice") {
     if (view === "choice") {
         loadCSS("./css/choice.css"); // relativ till HTML
         choiceFunction();
+        return;
+    }
+
+    if (view=== "timer") {
+        container.appendChild(timerViewFunc());
         return;
     }
 
