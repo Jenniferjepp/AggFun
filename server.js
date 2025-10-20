@@ -8,8 +8,8 @@ async function handler(request) {
   const url = new URL(request.url);
   const path = url.pathname;
 
-  if (path === "/" || path === "/aggsperten.html") {
-    return serveFile(request, "aggsperten.html");
+  if (path === "/" || path === "/aggFun.html") {
+    return serveFile(request, "aggFun.html");
   }
 
   // Serva statiska filer från projektroten
