@@ -32,7 +32,7 @@ export function timerViewFunc (eggDataObj) {
 
     // uppslag för antal minuter
     const eggBase = {
-        LÖSKOKT: { S: 0.2, M: 7, L: 8 },
+        LÖSKOKT: { S: 1, M: 7, L: 8 },
         MJUKKOKT: { S: 8, M: 9, L: 10 },
         HÅRDKOKT: { S: 10, M: 11, L: 12 }
     };
@@ -156,5 +156,5 @@ export function timerViewFunc (eggDataObj) {
         }, 1000);
     }
 
-    return bigTimerViewDiv; // ← viktigt!
+    return bigTimerViewDiv; 
 }

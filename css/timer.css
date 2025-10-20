@@ -1,3 +1,6 @@
+:root {
+    --dark-brown: #694106;
+}
 
 #bigTimerViewDiv {
     display: flex;
@@ -11,38 +14,35 @@
     margin-top: 139px;
 }
 
-/* ⬇️ En container som låter oss lägga texten ovanpå bilden */
+
 .timerBox {
     position: relative;     /* gör att barn med position:absolute utgår härifrån */
     display: inline-block;  /* shrink-wrap runt bildens storlek */
 }
 
 #timerImg {
-
     display: block;         /* ta bort “extra rad” under bilden */
-    height: 264.321px;          /* justera så den passar din layout */
+    height: 264.321px;      
     width: auto;
 }
 
-/* ⬇️ Textoverlayn som visar mm:ss mitt ovanpå bilden */
 #timerDisplay {
     position: absolute;     /* lägg ovanpå bilden */
     inset: 0;               /* fyll hela .timerBox */
-    display: grid;          /* använd grid för enkel centrering */
+    display: grid;          /* för enkel centrering */
     place-items: center;    /* centrera både lodrätt och vågrätt */
-    font-size: 42px;        /* stor, tydlig text */
+    font-size: 42px;        
     font-weight: 800;
     letter-spacing: 1px;
     user-select: none;      /* gör så texten inte markeras vid klick */
 
     font-family: "gluten";
-    color: #694106;
+    color: var(--dark-brown);
 }
 
 
-
 h1 {
-    color: #694106;
+    color: var(--dark-brown);
     text-align: center;
     font-family: Glory;
     font-weight: 400;
@@ -66,6 +66,7 @@ h1#infoHeadLine #minutes {
     margin-top: 32px;
 }
 
+
 #factsDiv {
     display: flex;
     flex-direction: column;
@@ -80,7 +81,7 @@ h1#infoHeadLine #minutes {
 }
 
 #factP {
-    color: #694106;
+    color: var(--dark-brown);
     text-align: center;
     font-family: Glory;
     font-size: 16px;

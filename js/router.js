@@ -16,11 +16,10 @@ function loadCSS(href) {
 export function navigateTo (view = "choice", eggDataObj) {
 
     const container = document.querySelector("#app");
-    // Rensa tidigare vy
     container.innerHTML = "";
 
     if (view === "choice") {
-        loadCSS("./css/choice.css"); // relativ till HTML
+        loadCSS("./css/choice.css");
         choiceFunction();
         return;
     }
@@ -37,8 +36,7 @@ export function navigateTo (view = "choice", eggDataObj) {
         return;
     }
 
-    // Fallback om okänd vy
-    container.textContent = "Oops! Okänd vy.";
+    container.textContent = "Något med vyn gick fel!";
 }
 
 window.addEventListener("DOMContentLoaded", () => {

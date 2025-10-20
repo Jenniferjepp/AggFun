@@ -8,6 +8,12 @@
     src: url(/assets/fonts/Gluten/static/Gluten-Regular.ttf);
 }
 
+:root {
+    --dark-brown: #694106;
+    --light-brown: #825108;
+    --orange: #FFC710;
+}
+
 #preferenceView, #sizeView {
     display: flex;
     flex-direction: column;
@@ -19,17 +25,17 @@
 
 #chatbubble {
     border-radius: 10px;
-    background: #FFC710;
+    background: var(--orange);
     width: 292px;
     height: 80px;
-    border: solid 1px #825108;
+    border: solid 1px var(--light-brown);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #chatText {
-    color: #694106;
+    color: var(--dark-brown);
     text-align: center;
     font-family: "glory";
     font-size: 20px;
