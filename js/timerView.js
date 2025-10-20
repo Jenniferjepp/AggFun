@@ -1,4 +1,6 @@
-// import { navigateTo } from "./router.js";
+/* timerView.js */
+
+import { navigateTo } from "./router.js";
 
 export function timerViewFunc (eggDataObj) {
     const bigTimerViewDiv = document.createElement("div");
@@ -30,7 +32,7 @@ export function timerViewFunc (eggDataObj) {
 
     // uppslag för antal minuter
     const eggBase = {
-        LÖSKOKT: { S: 6, M: 7, L: 8 },
+        LÖSKOKT: { S: 0.2, M: 7, L: 8 },
         MJUKKOKT: { S: 8, M: 9, L: 10 },
         HÅRDKOKT: { S: 10, M: 11, L: 12 }
     };
@@ -149,9 +151,7 @@ export function timerViewFunc (eggDataObj) {
                 clearInterval(tickId);      // stoppa timer loopen, 
                 tickId = null;              // nolla id:t, if (tickId) { /* den kör */ } else { /* den är stoppad */ }
 
-                // ⬇️ Navigera till nästa vy (doneView) när du har den i din router
-                //    Om du ännu inte gjort doneView: kommentera raden så länge
-                //navigateTo("done", eggDataObj);
+                navigateTo("done");
             }
         }, 1000);
     }

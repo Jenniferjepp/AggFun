@@ -141,7 +141,7 @@ export function choiceFunction () {
         // innehåll choices Div
         const buttonS = document.createElement("button");
         buttonS.classList.add("choiceButtons");
-        buttonS.textContent = "S - SMAL";
+        buttonS.textContent = "S - SMALL";
         buttonS.dataset.size = "S";   // ← lägg värdet här
         choicesDiv.appendChild(buttonS);
 
